@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+.icon {
+  font-size: 25px;
+}
+
+.bi-twitter {
+  font-size: 35px;
+}
+
+.retweet {
+  height: 20px;
+  width: 20px;
+  color: #1da2f3;
+}
+
 html,
 body {
   height: 100%;
@@ -36,7 +50,7 @@ ul {
 /* logo */
 
 .logo {
-  padding: 4% 10%;
+  padding: 2% 10%;
   color: #1da2f3;
   cursor: pointer;
 }
@@ -320,7 +334,7 @@ ul {
 }
 
 .news {
-  height: 85px;
+  height: 90px;
   margin-top: 5px;
   display: flex;
   border: 2px solid #d8dcdd;
@@ -329,7 +343,8 @@ ul {
 
 .newsContent {
   padding: 10px;
-  flex: 80%;
+  flex: 75%;
+  font-size: 15px;
 }
 
 .newsHeading p {
@@ -337,7 +352,7 @@ ul {
 }
 
 .newsPostImage {
-  flex: 20%;
+  flex: 25%;
 }
 
 .newsImage {
