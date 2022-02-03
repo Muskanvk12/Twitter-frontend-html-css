@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Wrapper */
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 0px 8%;
+  display: grid;
+  grid-template-columns: 0.7fr 1.5fr 0.8fr;
+}
+
+/* left bar */
+
+.leftBar {
+  font-size: 20px;
+  color: #171717;
+  border-right: 2px solid #d8dcdd;
+}
+
+/* logo */
+
+.logo {
+  padding: 4% 10%;
+  color: #1da2f3;
+  cursor: pointer;
+}
+
+/* menu */
+
+.menu {
+  padding: 2% 10%;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 30px 0px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.menu ul li span {
+  margin: 0px 20px 0px 0px;
+}
+
+.tweetButton {
+  display: flex;
+  justify-content: center;
+}
+
+.tweet {
+  border: none;
+  background-color: #1da2f3;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+  cursor: pointer;
+}
+
+.sideBarButton {
+  height: 42px;
+  width: 70%;
+  border-radius: 30px;
+  color: white;
+}
+
+/* main */
+
+.main {
+  border-right: #d8dcdd solid 2px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+/* main header */
+
+.main header {
+  padding-bottom: 10px;
+  border-bottom: 10px solid #e6edef;
+}
+
+/* heading */
+
+.heading {
+  background-color: white;
+  border-bottom: 2px solid #eff1f1;
+  font-size: 20px;
+  font-weight: 800;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.headingContent {
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headingText {
+  font-weight: 600;
+}
+
+.headingIcon {
+  color: #1da2f3;
+  cursor: pointer;
+}
+
+/* post */
+
+.post {
+  height: 80px;
+  padding-right: 15px;
+  display: grid;
+  grid-template-columns: 0.6fr 4fr 2fr;
+}
+
+.profilePicture {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePicture .profilePictureImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.postMiddleSection {
+  height: 100%;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input {
+  margin-top: 12px;
+}
+
+.inputField {
+  outline: none;
+  border: none;
+}
+
+.postOptions {
+  margin-top: 12px;
+  color: #1da2f3;
+  font-size: 18px;
+}
+
+.postOptionIcons {
+  padding: 0px 6px;
+  cursor: pointer;
+}
+
+.postTweet {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.postTweetButton {
+  height: 37px;
+  width: 80px;
+  border-radius: 30px;
+  color: white;
+}
+
+/* Main */
+
+.simplePost {
+  display: grid;
+  grid-template-columns: 0.5fr 5fr;
+  padding-top: 10px;
+  padding-right: 5px;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+.postProfilePicture {
+  align-items: flex-start;
+}
+
+.postContent {
+  padding: 0px 5px;
+}
+
+.info {
+  display: flex;
+}
+
+.usersName {
+  font-weight: 600;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+.usersUsername {
+  color: #9ea5ad;
+  cursor: pointer;
+}
+
+.postArrow {
+  color: #9ea5ad;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.hashTag {
+  color: #1da2f3;
+  cursor: pointer;
+}
+
+.postReactions ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  padding-right: 100px;
+  color: #9ea5ad;
+}
+
+.postReactions ul li i {
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+.postImage {
+  margin-top: 10px;
+}
+
+.userPostImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* rightbar */
+
+.rightbarWrapper {
+  padding: 5px 15px;
+}
+
+.search {
+  height: 40px;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  background-color: #e8ecef;
+  color: #9ea5ad;
+  border: none;
+  border-radius: 50px;
+  align-items: center;
+}
+
+.searchInput input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  background: none;
+  color: #839097;
+}
+
+.trendsForYou {
+  background-color: #f6f8fc;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.trendsForYou header {
+  height: 30px;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 2px solid #eff1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trendsForYouHeading {
+  font-weight: 600;
+}
+
+.settings {
+  color: #1da2f3;
+}
+
+.trendsForYou main section {
+  padding: 10px;
+  border-bottom: 2px solid #eff1f1;
+}
+
+.trendScope small {
+  color: #9ea5ad;
+}
+
+.trendingTags p {
+  font-weight: 600;
+}
+
+.news {
+  height: 85px;
+  margin-top: 5px;
+  display: flex;
+  border: 2px solid #d8dcdd;
+  border-radius: 12px;
+}
+
+.newsContent {
+  padding: 10px;
+  flex: 80%;
+}
+
+.newsHeading p {
+  color: #9ea5ad;
+}
+
+.newsPostImage {
+  flex: 20%;
+}
+
+.newsImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.numberOfPeopleTweeting small {
+  color: #9ea5ad;
+}
+
+.numberOfTweets {
+  color: #9ea5ad;
+}
+
+footer button {
+  padding: 10px;
+  border: none;
+  color: #1da2f3;
+  background: none;
+  cursor: pointer;
+}
